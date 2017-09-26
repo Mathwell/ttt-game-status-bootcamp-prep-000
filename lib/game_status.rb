@@ -21,7 +21,7 @@ def won?(board)
 end
 
 def full?(board)
-  full=board.select{|b| b.is_a?(" ")}
+  full=board.detect{|b| b.is_a?(" ")}
   puts full
   if full==nil
     return true
