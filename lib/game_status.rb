@@ -23,9 +23,9 @@ end
 def full?(board)
   full=board.select{|b| b.is_a(" ")}
   if full==nil
-    return false
-  else
     return true
+  else
+    return false
   end
 end
 
