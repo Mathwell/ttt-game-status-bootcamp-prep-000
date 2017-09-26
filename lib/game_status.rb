@@ -10,7 +10,7 @@ def won?(board)
   won=WIN_COMBINATIONS.select { |combination|
     board[combination[0]]==board[combination[1]] && board[combination[1]]==board[combination[2]] && board[combination[1]]!=" "
   }
-  if won=[]
+  if won.length=0
     return nil
   else
     return won
