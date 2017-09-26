@@ -13,7 +13,7 @@ def won?(board)
   }
   puts won
 
-  if won.length==nil
+  if won==nil
     return false
   else
     return won
