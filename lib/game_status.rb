@@ -11,6 +11,7 @@ def won?(board)
   won=WIN_COMBINATIONS.detect { |combination|
     board[combination[0]]==board[combination[1]] && board[combination[1]]==board[combination[2]] && board[combination[1]]!=" "
   }
+  puts won
 
   if won.length==nil
     return false
