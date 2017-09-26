@@ -20,7 +20,11 @@ def won?(board)
 end
 
 def full?(board)
-  false
+  if board.detect{|b| b.is_a(" ")}==nil
+    return true
+  else
+    return false
+  end
 end
 
 def draw?(board)
