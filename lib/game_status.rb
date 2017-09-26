@@ -12,7 +12,7 @@ def won?(board)
     board[combination[0]]==board[combination[1]] && board[combination[1]]==board[combination[2]] && board[combination[1]]!=" "
   }
 
-  if won.length==0
+  if won.length==nil
     return false
   else
     return won
