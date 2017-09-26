@@ -21,9 +21,11 @@ def won?(board)
 end
 
 def full?(board)
-  full=board.detect{|b| b.is_a?(" ")}
+  full=board.select { |b|
+     b.is_a?("X") || b.is_a?("O")
+   }
   puts full
-  if full==nil
+  if full.length==9
     return true
   else
     return false
