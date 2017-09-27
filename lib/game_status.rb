@@ -53,9 +53,9 @@ def winner(board)
 if !won?(board)
   return nil
 end
-  if count%2==1
-    return "O"
+  if (count%2==1)
+    return "X"
   else
-  return "X"
-end
+    return "Y"
+  end
 end
