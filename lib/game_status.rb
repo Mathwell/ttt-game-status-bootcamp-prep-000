@@ -11,7 +11,7 @@ def won?(board)
   won=WIN_COMBINATIONS.detect { |combination|
     board[combination[0]]==board[combination[1]] && board[combination[1]]==board[combination[2]] && board[combination[1]]!=" "
   }
-  
+
   if won==nil
     return false
   else
@@ -52,7 +52,7 @@ def winner(board)
 if !won?(board)
   return nil
 end
-puts count
+puts "count #{count}"
   if (count%2==1)
     return "X"
   else
