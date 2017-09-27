@@ -22,7 +22,7 @@ end
 
 def full?(board)
   full=board.detect  { |b|
-     b.strip.is_a?("") 
+     b.strip.is_a?("")
    }
   puts full
   if full.length==nil
@@ -30,7 +30,7 @@ def full?(board)
   else
     return false
   end
-  
+
 end
 
 def draw?(board)
