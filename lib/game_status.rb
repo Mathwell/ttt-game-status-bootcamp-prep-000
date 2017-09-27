@@ -26,10 +26,10 @@ def full?(board)
      b.strip.is_a?("")
    }
   puts full
-  if full==nil
-    return true
-  else
+  if full!=nil
     return false
+  else
+    return true
   end
 
 end
