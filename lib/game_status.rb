@@ -23,7 +23,7 @@ end
 def full?(board)
   puts board
   full=board.detect  { |b|
-     b.strip.is_a?("")
+     b.not_a?("X") && b.not_a("O")
      puts b
    }
   puts full
