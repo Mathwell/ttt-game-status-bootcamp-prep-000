@@ -24,6 +24,7 @@ def full?(board)
   puts board
   full=board.detect  { |b|
      b.strip.is_a?("")
+     puts b
    }
   puts full
   if full!=nil
