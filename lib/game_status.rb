@@ -50,6 +50,9 @@ def winner(board)
     count+=1
   end
   }
+if !won?(board)
+  return nil
+end
   if count%2==1
     return "O"
   else
