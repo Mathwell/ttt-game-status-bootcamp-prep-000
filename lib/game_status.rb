@@ -27,7 +27,7 @@ def full?(board)
     count+=1
   end
   }
-  if count==9 
+  if count==9
     return true
   else
     return false
