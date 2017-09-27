@@ -43,12 +43,6 @@ def over?(board)
 end
 
 def winner(board)
-  count=0
-  board.each {|cell|
-  if (cell=="X" || cell=="O")
-    count+=1
-  end
-  }
 if !won?(board)
   return nil
 end
