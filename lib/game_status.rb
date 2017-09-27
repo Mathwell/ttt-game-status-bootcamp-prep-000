@@ -21,6 +21,7 @@ def won?(board)
 end
 
 def full?(board)
+  puts board
   full=board.detect  { |b|
      b.strip.is_a?("")
    }
