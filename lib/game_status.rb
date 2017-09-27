@@ -52,12 +52,6 @@ def winner(board)
 if !won?(board)
   return nil
 end
-puts board[won?(board)[0]]
+return board[won?(board)[0]]
 
-puts "count #{count}"
-  if (count%2==1)
-    return "X"
-  else
-    return "Y"
-  end
 end
