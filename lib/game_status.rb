@@ -21,17 +21,7 @@ def won?(board)
 end
 
 def full?(board)
-  puts board
-  full=board.detect  { |b|
-     b.not_a?("X") && b.not_a("O")
-     puts b
-   }
-  puts full
-  if full!=nil
-    return false
-  else
-    return true
-  end
+  return true
 
 end
 
