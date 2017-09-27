@@ -20,7 +20,18 @@ def won?(board)
 end
 
 def full?(board)
-  return true
+  #return true
+  count=0
+  board.each {|cell|
+  if (cell=="X" || cell=="O")
+    count+=1
+  end
+  }
+  if count==9 
+    return true
+  else
+    return false
+  end
 
 end
 
